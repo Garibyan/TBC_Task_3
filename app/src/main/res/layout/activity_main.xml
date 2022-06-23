@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/profileinfo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/cv_bg_color"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/edtStyle"
+                android:hint="@string/edtEmail"
+                android:inputType="textEmailAddress" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtUserName"
+                style="@style/edtStyle"
+                android:hint="@string/userNameEdt" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtFirstName"
+                style="@style/edtStyle"
+                android:hint="@string/firstNameEdt" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtLastName"
+                style="@style/edtStyle"
+                android:hint="@string/lastNameEdt" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtAge"
+                style="@style/edtStyle"
+                android:hint="@string/ageEdt"
+                android:inputType="number" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPhoneNumber"
+                style="@style/edtStyle"
+                android:hint="@string/phoneNumberEdt"
+                android:inputType="phone" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSave"
+                    style="@style/btnStyle"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/saveBtnColor"
+                    android:text="@string/saveBtn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnClear"
+                    style="@style/btnStyle"
+                    android:layout_weight="1"
+                    android:background="@color/clearBtnColor"
+                    android:text="@string/cleareBtn" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TBCTask_3</string>
+    <string name="profileinfo">Profile Info</string>
+    <string name="edtEmail">Email</string>
+    <string name="userNameEdt">Username</string>
+    <string name="firstNameEdt">First Name</string>
+    <string name="lastNameEdt">Last Name</string>
+    <string name="ageEdt">Age</string>
+    <string name="phoneNumberEdt">Phone Number</string>
+    <string name="saveBtn">Save</string>
+    <string name="cleareBtn">Clear</string>
+    <string name="validInput">Congratulations, User created</string>
+    <string name="invalidUserName">Please, input correct Username</string>
+    <string name="invalidPhoneNumber">Please, input correct Phone number</string>
+    <string name="invalidEmail">Please, input correct Email</string>
+    <string name="invalidAge">Please, input correct Age</string>
+    <string name="isEmptyFilds">Please, fill all fields</string>
+    <string name="allCleared">All fields cleared</string>
+
+
+</resources>
